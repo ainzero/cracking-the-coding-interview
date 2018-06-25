@@ -5,11 +5,10 @@ def isPermutationOfPalindrone(str):
 
     is_even_length = str_length % 2 == 0
 
-    sorted_string = list(str)
-    sorted_string.sort()
+    list_string = list(str)
     
     char_dict = {}
-    for char in sorted_string:    
+    for char in list_string:    
         if char in char_dict:
             char_dict[char] += 1
         else:
